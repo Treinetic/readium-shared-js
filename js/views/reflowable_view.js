@@ -939,7 +939,7 @@ var ReflowableView = function(options, reader){
         // directly after set, i.e. after showBook(), see: https://github.com/jquery/jquery/issues/2622
         //_currentOpacity = $epubHtml.css('opacity');
         _currentOpacity = _$epubHtml[0].style.opacity;
-        _$epubHtml.css('opacity', "0");
+        //_$epubHtml.css('opacity', "0");
     }
 
     function showBook()
