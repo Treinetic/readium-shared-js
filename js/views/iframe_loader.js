@@ -105,13 +105,13 @@ var IFrameLoader = function() {
                 }
                 
                 // Chrome 49+ fails to render SVG otherwise
-                // https://github.com/readium/readium-js/issues/138
+                // https://github.com/Treinetic/readium-js/issues/138
                 if (mathJax.Hub.Browser.isChrome) {
                     useFontCache = false;
                 }
                 
                 // Edge fails to render SVG otherwise
-                // https://github.com/readium/readium-js-viewer/issues/394#issuecomment-185382196
+                // https://github.com/Treinetic/readium-js-viewer/issues/394#issuecomment-185382196
                 if (window.navigator.userAgent.indexOf("Edge") > 0) {
                     useFontCache = false;
                 }

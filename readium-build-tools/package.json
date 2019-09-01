@@ -30,14 +30,14 @@
       "url": "http://opensource.org/licenses/BSD-3-Clause"
     }
   ],
-  "homepage": "http://github.com/readium/readium-cfi-js",
+  "homepage": "http://github.com/Treinetic/readium-cfi-js",
   "bugs": {
-    "url": "http://github.com/readium/readium-cfi-js/issues",
+    "url": "http://github.com/Treinetic/readium-cfi-js/issues",
     "email": "daniel.weck@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/readium/readium-cfi-js.git"
+    "url": "git://github.com/Treinetic/readium-cfi-js.git"
   },
   "files": [
     "build-output/",

@@ -309,8 +309,8 @@ var ReflowableView = function(options, reader){
         // TODO: how to address this correctly across all the affected platforms?!
         // Video surface sometimes (depends on the video codec) disappears from CSS column (i.e. reflow page) during playback
         // (audio continues to play normally, but video canvas is invisible).
-        // https://github.com/readium/readium-js-viewer/issues/265#issuecomment-73018762
-        // ...Meanwhile, reverting https://github.com/readium/readium-js-viewer/issues/239
+        // https://github.com/Treinetic/readium-js-viewer/issues/265#issuecomment-73018762
+        // ...Meanwhile, reverting https://github.com/Treinetic/readium-js-viewer/issues/239
         // by commenting the code below (which unfortunately only works with some GPU / codec configurations,
         // but actually fails on several other machines!!)
         /*
@@ -580,7 +580,7 @@ var ReflowableView = function(options, reader){
         
         // Ensure that the new viewport width is always even numbered
         // this is to prevent a rendering inconsistency between browsers when odd-numbered bounds are used for CSS columns
-        // See https://github.com/readium/readium-shared-js/issues/37
+        // See https://github.com/Treinetic/readium-shared-js/issues/37
         newWidth -= newWidth % 2;
 
         var newHeight = _$contentFrame.height();

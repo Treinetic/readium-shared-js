@@ -2,16 +2,16 @@
 
 **EPUB rendering engine written in HTML, CSS and Javascript.**
 
-This is a software component commonly-shared between the Readium Chrome extension and "cloud reader" ( https://github.com/readium/readium-js-viewer ),
-as well as various native application "launchers" such as iOS ( https://github.com/readium/SDKLauncher-iOS ),
-OSX ( https://github.com/readium/SDKLauncher-OSX ),
-Android ( https://github.com/readium/SDKLauncher-Android ),
-Windows ( https://github.com/readium/SDKLauncher-Windows ), etc.
+This is a software component commonly-shared between the Readium Chrome extension and "cloud reader" ( https://github.com/Treinetic/readium-js-viewer ),
+as well as various native application "launchers" such as iOS ( https://github.com/Treinetic/SDKLauncher-iOS ),
+OSX ( https://github.com/Treinetic/SDKLauncher-OSX ),
+Android ( https://github.com/Treinetic/SDKLauncher-Android ),
+Windows ( https://github.com/Treinetic/SDKLauncher-Windows ), etc.
 
 You can try Readium here:
 
 * Online "cloud reader" demo: https://readium.firebaseapp.com
-* Chrome extension (can be used offline): https://chrome.google.com/webstore/detail/readium/fepbnnnkkadjhjahcafoaglimekefifl
+* Chrome extension (can be used offline): https://chrome.google.com/webstore/detail/Treinetic/fepbnnnkkadjhjahcafoaglimekefifl
 
 
 ## License

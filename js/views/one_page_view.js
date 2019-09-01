@@ -625,7 +625,7 @@ var OnePageView = function (options, classes, enableBookStyleOverrides, reader) 
 
             var css1 = Helpers.CSSTransformString({scale: scale, enable3D: enable3D});
             
-            // See https://github.com/readium/readium-shared-js/issues/285 
+            // See https://github.com/Treinetic/readium-shared-js/issues/285 
             css1["min-width"] = _meta_size.width;
             css1["min-height"] = _meta_size.height;
             

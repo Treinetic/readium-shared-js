@@ -269,7 +269,7 @@ Helpers.UpdateHtmlFontAttributes = function ($epubHtml, fontSize, fontObj, callb
         var perf = false;
 
         // TODO: very slow on Firefox!
-        // See https://github.com/readium/readium-shared-js/issues/274
+        // See https://github.com/Treinetic/readium-shared-js/issues/274
         if (perf) var time1 = window.performance.now();
 
 
@@ -318,7 +318,7 @@ Helpers.UpdateHtmlFontAttributes = function ($epubHtml, fontSize, fontObj, callb
         }
 
         // TODO: is this a complete list? Is there a better way to do this?
-        //https://github.com/readium/readium-shared-js/issues/336
+        //https://github.com/Treinetic/readium-shared-js/issues/336
         // Note that font-family is handled differently, using an injected stylesheet with a catch-all selector that pushes an "!important" CSS value in the document's cascade.
         var $textblocks = $('p, div, span, h1, h2, h3, h4, h5, h6, li, blockquote, td, pre, dt, dd, code, a', $epubHtml); // excludes section, body etc.
 

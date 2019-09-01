@@ -28254,7 +28254,7 @@ _readium_shared_js_helpers = function (Globals, _, $, JQuerySizes, SpineItem, UR
     var fontLoadCallback = function () {
       var perf = false;
       // TODO: very slow on Firefox!
-      // See https://github.com/readium/readium-shared-js/issues/274
+      // See https://github.com/Treinetic/readium-shared-js/issues/274
       if (perf)
         var time1 = window.performance.now();
       if (changeFontFamily != NOTHING) {
@@ -28293,7 +28293,7 @@ _readium_shared_js_helpers = function (Globals, _, $, JQuerySizes, SpineItem, UR
         return;
       }
       // TODO: is this a complete list? Is there a better way to do this?
-      //https://github.com/readium/readium-shared-js/issues/336
+      //https://github.com/Treinetic/readium-shared-js/issues/336
       // Note that font-family is handled differently, using an injected stylesheet with a catch-all selector that pushes an "!important" CSS value in the document's cascade.
       var $textblocks = $('p, div, span, h1, h2, h3, h4, h5, h6, li, blockquote, td, pre, dt, dd, code, a', $epubHtml);
       // excludes section, body etc.
@@ -29181,9 +29181,9 @@ _readium_shared_js_models_current_pages_info = function () {
         return false;
       var lastOpenPage = this.openPages[this.openPages.length - 1];
       // TODO: handling of non-linear spine items ("ancillary" documents), allowing page turn within the reflowable XHTML, but preventing previous/next access to sibling spine items. Also needs "go back" feature to navigate to source hyperlink location that led to the non-linear document.
-      // See https://github.com/readium/readium-shared-js/issues/26
+      // See https://github.com/Treinetic/readium-shared-js/issues/26
       // Removed, needs to be implemented properly as per above.
-      // See https://github.com/readium/readium-shared-js/issues/108
+      // See https://github.com/Treinetic/readium-shared-js/issues/108
       // if(!spine.isValidLinearItem(lastOpenPage.spineItemIndex))
       //     return false;
       return lastOpenPage.spineItemIndex < spine.last().index || lastOpenPage.spineItemPageIndex < lastOpenPage.spineItemPageCount - 1;
@@ -29199,9 +29199,9 @@ _readium_shared_js_models_current_pages_info = function () {
         return false;
       var firstOpenPage = this.openPages[0];
       // TODO: handling of non-linear spine items ("ancillary" documents), allowing page turn within the reflowable XHTML, but preventing previous/next access to sibling spine items. Also needs "go back" feature to navigate to source hyperlink location that led to the non-linear document.
-      // See https://github.com/readium/readium-shared-js/issues/26
+      // See https://github.com/Treinetic/readium-shared-js/issues/26
       // Removed, needs to be implemented properly as per above.
-      // //https://github.com/readium/readium-shared-js/issues/108
+      // //https://github.com/Treinetic/readium-shared-js/issues/108
       // if(!spine.isValidLinearItem(firstOpenPage.spineItemIndex))
       //     return false;
       return spine.first().index < firstOpenPage.spineItemIndex || 0 < firstOpenPage.spineItemPageIndex;
@@ -34654,7 +34654,7 @@ _readium_shared_js_views_one_page_view = function (Globals, $, _, EventEmitter, 
           scale: scale,
           enable3D: enable3D
         });
-        // See https://github.com/readium/readium-shared-js/issues/285 
+        // See https://github.com/Treinetic/readium-shared-js/issues/285 
         css1['min-width'] = _meta_size.width;
         css1['min-height'] = _meta_size.height;
         _$epubHtml.css(css1);
@@ -35796,12 +35796,12 @@ _readium_shared_js_views_iframe_loader = function ($, _, URI) {
             useFontCache = false;
           }
           // Chrome 49+ fails to render SVG otherwise
-          // https://github.com/readium/readium-js/issues/138
+          // https://github.com/Treinetic/readium-js/issues/138
           if (mathJax.Hub.Browser.isChrome) {
             useFontCache = false;
           }
           // Edge fails to render SVG otherwise
-          // https://github.com/readium/readium-js-viewer/issues/394#issuecomment-185382196
+          // https://github.com/Treinetic/readium-js-viewer/issues/394#issuecomment-185382196
           if (window.navigator.userAgent.indexOf('Edge') > 0) {
             useFontCache = false;
           }
@@ -39347,8 +39347,8 @@ _readium_shared_js_views_reflowable_view = function (Globals, $, _, EventEmitter
       // TODO: how to address this correctly across all the affected platforms?!
       // Video surface sometimes (depends on the video codec) disappears from CSS column (i.e. reflow page) during playback
       // (audio continues to play normally, but video canvas is invisible).
-      // https://github.com/readium/readium-js-viewer/issues/265#issuecomment-73018762
-      // ...Meanwhile, reverting https://github.com/readium/readium-js-viewer/issues/239
+      // https://github.com/Treinetic/readium-js-viewer/issues/265#issuecomment-73018762
+      // ...Meanwhile, reverting https://github.com/Treinetic/readium-js-viewer/issues/239
       // by commenting the code below (which unfortunately only works with some GPU / codec configurations,
       // but actually fails on several other machines!!)
       /*
@@ -39535,7 +39535,7 @@ _readium_shared_js_views_reflowable_view = function (Globals, $, _, EventEmitter
       var newWidth = _$contentFrame.width();
       // Ensure that the new viewport width is always even numbered
       // this is to prevent a rendering inconsistency between browsers when odd-numbered bounds are used for CSS columns
-      // See https://github.com/readium/readium-shared-js/issues/37
+      // See https://github.com/Treinetic/readium-shared-js/issues/37
       newWidth -= newWidth % 2;
       var newHeight = _$contentFrame.height();
       if (_lastViewPortSize.width !== newWidth || _lastViewPortSize.height !== newHeight) {
