@@ -621,7 +621,8 @@ var ReaderView = function (options) {
                     self.once(ReadiumSDK.Events.PAGINATION_CHANGED, function (pageChangeData)
                     {
                         var cfi = new BookmarkData(bookMark.idref, bookMark.contentCFI);
-                        self.debugBookmarkData(cfi);
+                        //TODO I don't see a way to conditionally disable calling this method... need to fix this later
+                        //self.debugBookmarkData(cfi);
                     });
 
                     self.openSpineItemElementCfi(bookMark.idref, bookMark.contentCFI, self);
