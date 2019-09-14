@@ -335,8 +335,8 @@ var OnePageView = function (options, classes, enableBookStyleOverrides, reader) 
     this.decorateIframe = function () {
         if (!_$iframe || !_$iframe.length) return;
 
-        _$iframe.css("border-bottom", "1px dashed silver");
-        _$iframe.css("border-top", "1px dashed silver");
+        // _$iframe.css("border-bottom", "1px dashed silver");
+        // _$iframe.css("border-top", "1px dashed silver");
     };
 
     this.remove = function () {
