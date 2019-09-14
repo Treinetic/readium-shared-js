@@ -35,8 +35,8 @@ require.config({
         "readium_js_plugins":
             process._RJS_rootDir(0) + '/js/plugins_controller',
 
-        // jquery:
-        //     process._RJS_rootDir(0) + '/node_modules/jquery/dist/jquery',
+        jquery:
+            process._RJS_rootDir(0) + '/node_modules/jquery/dist/jquery',
 
         underscore:
             process._RJS_rootDir(0) + '/node_modules/underscore/underscore',
