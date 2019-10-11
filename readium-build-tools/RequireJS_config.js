@@ -332,7 +332,6 @@ function(thiz){
 
     //findNestedDependencies: true,
 
-    wrap: false,
 
     wrapShim: false,
 
